@@ -1,32 +1,28 @@
 #include "main.h"
-/**
-  * main concatenates two strings
-  * @dest: Destination string
-  * @src: the soure of the string
+
+/**                                                                      
+  *_strcat - concatenates two strings                                                         * @dest: Destination string                                                              
+  * @src: the soure of the string                                                         
   * Return: dest
-  *
-char *_strcat(char *dest, char *src);
-{
-	int i;
+  */                                                                            
+char *_strcat(char *dest, char *src);                                                       
+{                                                                                           
+	int i;                                                                             
 	int j;
 
-	i = 0;
+	i = 0;                                                              
+        while (dest[i] != '\0')                                                            
+	{                                                                                  
+		i++;                                                                       
+	}                                                                                 
+	j = 0;                                                                           
+	while (src[j] != '\0')                                                             
+	{                                                                                  
+		dest[i] = src[j];                                                          
+		j++;                                                                       
+		i++;                                                                       
+	}                                                                                 
 
-	while (dest[i] != '\0')
-	{
-		i++;
-	}
-
-	j = 0;
-	
-	while (src[j] != '\0')
-	{
-		dest[i] = src[j];
-		j++;
-		i++;
-	}
-	dest[i] = '\0';
-	return (dest);
+	dest[i] = '\0';                                                                          
+	return (dest);                                                                     
 }
-
-
