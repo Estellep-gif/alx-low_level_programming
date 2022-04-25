@@ -7,13 +7,13 @@
 int main(void)
 {
 	int nbre;
-	char letter;
+	char letr;
 
 	for (nbre = 0; nbre < 10; nbre++)
 		putchar((nbre % 10) + '0');
 
-	for (letter = 'a'; letter <= 'f'; letter++)
-		putchar(letter);
+	for (letr = 'a'; letr <= 'f'; letr++)
+		putchar(letr);
 	putchar('\n');
 	return (0);
 }
