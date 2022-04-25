@@ -11,7 +11,6 @@ int main(void)
 
 	for (nbre = 0; nbre < 10; nbre++)
 		putchar((nbre % 10) + '0');
-
 	for (letr = 'a'; letr <= 'f'; letr++)
 		putchar(letr);
 	putchar('\n');
