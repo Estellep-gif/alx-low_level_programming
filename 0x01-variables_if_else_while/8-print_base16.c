@@ -8,12 +8,11 @@ int main(void)
 {
 	int nbre;
 	char letr;
-
 	for (nbre = 0; nbre < 10; nbre++)
 		putchar((nbre % 10) + '0');
 	for (letr = 'a'; letr <= 'f'; letr++)
 		putchar(letr);
 	putchar('\n');
-	return(0);
+	return (0);
 }
 
