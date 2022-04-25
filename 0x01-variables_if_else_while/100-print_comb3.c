@@ -7,20 +7,32 @@
   */
 int main(void)
 {
-	int digi1, digi2;
+	int a, b;
 
-	for (digi1 = 0; digi1 < 10; digi1++)
+	a = 48;
+	b = 48;
+
+
+	while (b < 58)
 	{
-		for (digi2 = 0; digi2 < 10; digi2++)
+		a = 48;
+		while (a < 58)
 		{
-			putchar((digi1 % 10) + '0');
-			putchar((digi2 % 10) + '0');
-
-			if (digi1 == 9 && digi2 == 9)
-				continue;
+			if (b != a && a < b)
+			{
+				putchar(b);
+				putchar(a);
+				if (i == 57 && e == 56)
+				{
+					break;
+				}
 			putchar(',');
 			putchar(' ');
+			}
+			a++;
+
 		}
+		b++;
 	}
 	putchar('\n');
 	return (0);
