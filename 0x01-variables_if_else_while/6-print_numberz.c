@@ -4,7 +4,7 @@
   * 
   * Return: Always 0 (succeeds)
   */
-int void(main)
+int main(void)
 {
 	int a;
 	for (a = 48; a <= 57; a ++)
